@@ -14,6 +14,7 @@
 	
 	
      <!--
+     toto
          Si on souhaite rajouter du CCS alors qu'on utilise du Boostrap, faut rajouter son propore CSS en dessous des lignes
          Pour ecraser des propriétés de Boostrap, il faut utiliser l'ID qui prend le dessus sur les CLASS
      -->
