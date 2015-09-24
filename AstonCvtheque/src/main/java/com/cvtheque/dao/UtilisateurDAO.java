@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Set;
 
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -91,6 +92,15 @@ public class UtilisateurDAO extends AbstractDAO<IUtilisateurEntity> implements I
 	@Override
 	protected AbstractJdbcMapper<IUtilisateurEntity> getMapper() {
 		return new UtilisateurJdbcMapper();
+	}
+
+	public IUtilisateurEntity selectLogin(String pLogin) throws ExceptionDao {
+		Set<IUtilisateurEntity> allLogin = this.selectAll("login='" + pLogin + "'", null);
+		if ((allLogin == null) || allLogin.isEmpty()) {
+			return null;
+		}
+		// On retourne le premier
+		return allLogin.iterator().next();
 	}	
 
 }

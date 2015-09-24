@@ -31,7 +31,7 @@
         <div class="col-md-10"> 
        		<div class="form-control divInputs">
 				<div class="col-md-8 col-md-offset-2">
-<form class="form-horizontal" role="form">
+<form class="form-horizontal" role="form" action="ServletLogin" method="post">
 	<fieldset>
    		<legend class="text-info">
      		<small>CVTHEQUE</small>
@@ -58,8 +58,8 @@
 					</div>	
 	
 					<div class="col-md-3 col-md-offset-3 col-md-push-2">
-					  		<!-- <button type="submit" class="btn btn-primary btn-sm">Connexion</button> -->
-					  		<a href="#connexion" class="btn btn-primary btn-sm" role="button">Connexion</a>					
+					  	 <button type="submit" class="btn btn-primary btn-sm">Connexion</button>
+					  							
 					</div>
 					
 					<div class="col-md-3 col-md-offset-3">
@@ -77,32 +77,12 @@
 	</div>
 </div>	
 
-
-
-      
-
-
-
-
-
-
-
-
-
-
 <script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui-1.10.4.js"></script>
-	<script src="js/scriptOnglet.js"></script>
- 
+	<script src="js/scriptOnglet.js"></script> 
     
     <script src="jquery/dist/jquery.js"></script>
     <script src="bootstrap/dist/js/bootstrap.js"></script>
-   
-  
-    
-  
-
-
     
 </body>
 </html>
