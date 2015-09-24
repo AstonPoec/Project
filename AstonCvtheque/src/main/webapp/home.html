@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+
+<!-- CSS -->
+
+
+<link rel=stylesheet href="bootstrap/css/bootstrap.css" rel="stylesheet"
+	type="text/css" />
+<link rel=stylesheet href="bootstrap/css/bootstrap-responsive.css"
+	rel="stylesheet" type="text/css" />
+<link rel=stylesheet href="formulaire.css" type="text/css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+
+
+<title></title>
+</head>
+
+
+<!--     <div ng-app="myApp"> -->
+<!--   <div ng-controller="MainCtrl"> -->
+<!--    {{ text }} -->
+<!--     logique du contrôleur -->
+<!--   </div> -->
+</div>
+
+<h2 class="cvt-h2">FORMULAIRE D'INSCRIPTION</h2>
+
+<div class=cvt-form>
+	<form action="#" class="cvt-form cvt-register">
+		<p>
+			<span class="cvt-italic">Complétez le formulaire. Les champs
+				marqués par </span><em>*</em> sont <strong>obligatoires</strong>
+		</p>
+
+		<fieldset>
+			<label for="register-login">Login</label> <input id="register-login"
+				placeholder="Votre login" autofocus="" value=""> <label
+				for="cvt-motdepasse">Mot de passe</label> <input
+				name="cvt-motdepasse" id="cvt-motdepasse" type="password" name=""
+				placeholder="Votre mot de passe" autofocus=""></br> </br> <label
+				for="cvt-motdepasse"> Confirmez votre mot de passe</label> <input
+				name="cvt-motdepasse" id="cvt-motdepasse" type="password" name=""
+				placeholder="Votre mot de passe" autofocus="">
+
+			<fieldset>
+				<legend>ETAT CIVIL</legend>
+
+				<label for="cvt-name">Nom</label> <input name="cvt-name"
+					id="cvt-name" placeholder="Votre nom" autofocus="" required="">
+
+				<label for="cvt-prenom">Prénom</label> <input name="cvt-prenom"
+					id="cvt-prenom" placeholder="Votre Prénom" autofocus="" required=""></br>
+				<label for="cvt-datedenaissance">Date de naissance</label> <input
+					name="cvt-datedenaissance" id="cvt-datedenaissance"
+					placeholder="00/00/0000" autofocus="" required=""> <label
+					for="cvt-adresse">Adresse</label> <input name="cvt-adresse"
+					id="cvt-adresse" placeholder="Votre adresse" autofocus=""
+					required=""></br> <label for="cvt-telephone">Portable</label> <input
+					name="cvt-telephone" id="cvt-telephone" placeholder="06xxxxxxxx"
+					pattern="06[0-9]{8}" type="tel"> <label for="cvt-email">Email</label>
+				<input name="cvt-email" id="cvt-email" type="email"
+					placeholder="prenom.nom@blablabla.fr" required=""
+					pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"></br> <label
+					for="cvt-classe">Classe</label> <input name="cvt-classe"
+					id="cvt-classe" type="text" placeholder="classeX" required="">
+
+				<label for="cvt-contrat">Contrat</label> <input name="cvt-contrat"
+					id="cvt-contrat" type="text" placeholder="classeX" required="">
+
+				<span class="cvt-espace">Niveau d'étude</span> <select name="niveau">
+					<option>Baccalaur&eacute;at</option>
+					<option>Bac +1</option>
+					<option selected="selected">Bac +2</option>
+					<option>Bac +3</option>
+					<option>Bac +4</option>
+					<option>Bac +5</option>
+				</select>
+
+			</fieldset>
+
+
+			
+
+			<fieldset>
+				<legend>EXPERIENCES PROFESSIONNELLES</legend>
+				<label for="entreprise">DE</label><input id="cvt-periodedebut"
+					 type="date" required=""> 
+					 <label
+					for="poste">A</label><input id="cvt-periodefin"
+					 type="date"required=""><br> 
+					
+					<label
+					for="posteoccupe">POSTE</label><input id="cvt-posteoccupe" placeholder="poste occupé"
+					required=""> 
+					
+					<label for="finperiode">ENTREPRISE</label><input
+					id="cvt-entreprise" type="date" placeholder="nom de l'entreprise" required=""><br>
+				<button>Ajouter Expérience</button>
+				<!-- 			pattern=<label for="classe">Classe</label> <input id="classe type="text" placeholder="classeX" required="">"[0-9]{2}" required="" type="number">  -->
+				<!-- 		<textarea id="comments"></textarea> -->
+			</fieldset>
+
+			<p>
+				<input value="Suivant" type="submit"
+					style="alignment-adjust: central">
+			</p>
+		</fieldset>
+		
+		
+		
+			<fieldset>
+				<legend>FORMATION</legend>
+				
+				<p>Etes-vous actuellement en formation à ASTON ? 
+				<select name="cvt-formationactuel">
+					<option selected="selected">Oui</option>
+					<option>Non</option>
+				</select>
+				<select name="cvt-formationaston">
+					<option selected="selected">POEC JAVA</option>
+					<option>POEC PHP</option>
+					<option>POEC DOT NET</option>
+				</select>
+			
+				</p>
+				<label for="entreprise">DE</label><input id="cvt-periodedebut"
+					 type="date" required=""> 
+					 <label
+					for="poste">A</label><input id="cvt-periodefin"
+					 type="date"required=""><br> 
+					
+					<label
+					for="posteoccupe">Diplôme</label><input id="cvt-posteoccupe"
+					required=""> 
+					
+					<label for="finperiode">Ecole/Université</label><input
+					id="cvt-entreprise" type="date" placeholder="nom de l'école/université" required=""><br>
+				
+				<!-- 			pattern=<label for="classe">Classe</label> <input id="classe type="text" placeholder="classeX" required="">"[0-9]{2}" required="" type="number">  -->
+				<!-- 		<textarea id="comments"></textarea> -->
+			</fieldset>
+
+			<p>
+				<input value="Suivant" type="submit"
+					style="alignment-adjust: central">
+			</p>
+	
+		<fieldset>
+				<legend>DIVERS</legend>
+				
+				
+				 <p><input id="cvt-periodedebut"
+					 type="date" required="">
+				<input value="Parcourir" type="submit"
+					style="alignment-adjust: central">
+			</p>
+					 <label
+					for="poste">TELECHARGER UN CV</label><input id="cvt-periodefin"
+					 type="date"required=""><p><input value="Parcourir" type="submit"
+					style="alignment-adjust: central">
+			</p> 
+					<span class="cvt-espace">Véhiculé?</span>
+					<select name="cvt-formationaston">
+					<option selected="selected">Oui</option>
+					<option>Non</option>
+					
+				</select>
+				
+				<!-- 			pattern=<label for="classe">Classe</label> <input id="classe type="text" placeholder="classeX" required="">"[0-9]{2}" required="" type="number">  -->
+				<!-- 		<textarea id="comments"></textarea> -->
+			</fieldset>
+	</form>
+
+</div>
+</html>

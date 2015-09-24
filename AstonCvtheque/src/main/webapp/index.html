@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet href= "formulaire.css" type="text/css">
+    </head>
+    <body>
+        <h2>FORMULAIRE D'INSCRIPTION</h2>
+    <form action="#">
+        <p>
+            <i>Compl&eacute;tez le formulaire. Les champs marqu&eacute;s par </i><em>*</em>
+            sont <em>obligatoires</em>
+        </p>
+
+        <fieldset>
+            <label for="login">Login</label> 
+            <input id="login" placeholder="Votre login" autofocus="" >&nbsp;&nbsp;<label for="motdepasse">Mot de passe</label> 
+            <input id="motdepasse" type="password" placeholder="Votre mot de passe" autofocus="" >
+       
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <fieldset>
+                <legend>COMPETENCES</legend>
+                <label for="competence1">Comp&eacute;tence1</label><input id="competence1"><br>
+                <label for="competence2">Comp&eacute;tence2</label><input id="competence2"><br>
+                <label for="competence3">Comp&eacute;tence3</label><input id="competence3"><br>
+                <button >Ajouter Comp&eacute;tence</button>
+            </fieldset>
+            
+            <fieldset>
+                <legend>LANGUE</legend>
+                <label for="langue">Langue parl&eacute;</label><input id="langue">
+                Niveau <select style=""><option>Bilingue</option>
+                        <option>Courant</option>
+                        <option selected="selected">Interm&eacute;diaire</option>
+                        <option>Scolaire</option>
+                       
+
+                    </select>
+                <br>
+                <button >Ajouter Langue</button>
+            </fieldset>
+             <fieldset>
+                 <legend>CENTRE D'INTER&Ecirc;T</legend>
+                 <label for="centredinteret">Langue parl&eacute;</label><input id="centredinteret"><i style=" font-family:fantasy; font-size:  small">&agrave; s&eacute;parer par une virgule</i>           
+            </fieldset>
+            <fieldset>
+                Ajout du cv<br>
+                Ajout de r&eacute;alisations
+            </fieldset>
+            <p>
+                <input value="Soumettre" type="submit">
+            </p>
+        </fieldset>
+    </form>
+    </body>
+</html>

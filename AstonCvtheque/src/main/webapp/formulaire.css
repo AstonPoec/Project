@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 août 2015, 15:13:59
+    Author     : carine
+*/
+.cvt-form {
+
+}
+
+label {
+	display: inline-block; width : 300px;
+	margin: 6px;
+	width: 300px;
+}
+
+select {
+	width: 110px;
+	display: inline-block;
+	width: 150px;
+	margin: 56px;
+}
+
+.cvt-h2 {
+	
+}
+
+input {
+	width: 300px;
+}
+
+.cvt-form cvt-register {
+	background-color: yellow;
+}
+
+.cvt-italic {
+	font-style: italic;
+}
+
+.cvt-espace {
+	margin: 6px;
+}
+
+button {
+	float: right;
+}
+
+table{
+border-collapse:collapse;
+width:100%;
+max-width:700px;
+min-width:400px;
+text-align:center;
+	
+}
+
+table
+{
+border: 3px solid gray;
+}
+
+th{
+background-color: grey;
+	
+}
+
+th, td
+{
+height: 24px;
+padding:4px;
+vertical-align:middle;
+}
