@@ -51,6 +51,16 @@ public class TableEntity extends AbstractEntity implements ITableEntity {
 	public void setLibelleElement(String libelleElement) {
 		this.libelleElement = libelleElement;
 	}
+
+	public Integer getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setId(Integer unId) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

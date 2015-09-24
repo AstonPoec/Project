@@ -193,6 +193,5 @@ public abstract class AbstractDAO<T extends IEntity> implements Serializable,IDA
 
 		}
 	}
-
 	
 }

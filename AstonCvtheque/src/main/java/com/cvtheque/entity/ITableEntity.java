@@ -1,6 +1,6 @@
 package com.cvtheque.entity;
 
-public interface ITableEntity {
+public interface ITableEntity extends IEntity {
 	
 	/**
 	 * @return the codeTable
