@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+		
+	<bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.login}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+    
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    	
+ 
+	<context:component-scan base-package="com.cvtheque.dao,com.cvtheque.service" />
+
+	<context:property-placeholder location="classpath*:spring/infodata.properties"/>
+	  
+
+	<!--	
+	<context:property-placeholder location="infodata.properties" />	
+	 
+	<bean id="abstractDAO" class="com.cvtheque.dao.AbstractDAO" abstract="true">
+		<property name="dbDriver" value="${db.driver}"/>
+		<property name="dbUrl" value="${db.url}"/>
+		<property name="dbLogin" value="${db.login}"/>
+		<property name="dbPwd" value="${db.password}"/>
+	</bean>
+	
+	<bean id="utilisateurDAO" class="com.cvtheque.dao.UtilisateurDAO" parent="abstractDAO"></bean>
+	
+	<bean id="compteDAO" class="com.cvtheque.dao.CompteDAO" parent="abstractDAO"></bean>
+	
+	<bean id="operationDAO" class="com.cvtheque.dao.OperationDAO" parent="abstractDAO"></bean>
+	-->
+
+</beans>
